@@ -386,3 +386,8 @@ variable "deployment_policy" {
   default     = "Rolling"
   description = "Specify deployment policy"
 }
+
+variable "batch_size" {
+  default     = "1"
+  description = "Specify deployment batch size"
+}

@@ -691,7 +691,7 @@ resource "aws_elastic_beanstalk_environment" "default" {
   setting {
     namespace = "aws:elasticbeanstalk:command"
     name      = "BatchSize"
-    value     = "1"
+    value     = "${var.batch_size}"
   }
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
